@@ -1,0 +1,19 @@
+{
+  "name": "has",
+  "version": "1.0.0",
+  "description": "Helper method to see if an object has a specific key",
+  "main": "has.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisfcolon/has.git"
+  },
+  "author": "Luis Colon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisfcolon/has/issues"
+  },
+  "homepage": "https://github.com/luisfcolon/has#readme"
+}
