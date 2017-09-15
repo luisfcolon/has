@@ -3,6 +3,7 @@
 
 # testing
 /coverage
+.coveralls.yml
 
 # misc
 .DS_Store
