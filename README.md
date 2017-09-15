@@ -23,11 +23,14 @@ var user = {
 }
 
 const hasFirstname = has(user, 'firstname');
-console.log(firstname); // true
+console.log(hasFirstname); // true
 
 const hasCity = has(user, 'address', 'city');
-console.log(city); // true
+console.log(hasCity); // true
 
 const hasZip = has(user, 'address', 'zip');
-console.log(zip); // false
+console.log(hasZip); // false
+
+const hasUser2 = has(user2, 'firstname');
+console.log(hasUser2); // false
 ```
