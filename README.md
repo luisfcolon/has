@@ -8,9 +8,25 @@
 Determine if a javascript object has a key.
 Allows for nested key detection.
 
+# Installation
+
+With yarn
+
+```
+yarn add ohas
+```
+
+With npm
+
+```
+npm install ohas --save
+```
+
 # Usage
 
 ```
+import has from 'ohas';
+
 var user = {
   firstname: 'John',
   lastname: 'Smith',
