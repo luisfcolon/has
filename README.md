@@ -24,7 +24,7 @@ npm install ohas --save
 
 # Usage
 
-```
+```js
 import has from 'ohas';
 
 var user = {
