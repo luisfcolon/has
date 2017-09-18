@@ -12,13 +12,13 @@ Allows for nested key detection.
 
 With yarn
 
-```
+```bash
 yarn add ohas
 ```
 
 With npm
 
-```
+```bash
 npm install ohas --save
 ```
 
