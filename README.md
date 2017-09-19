@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/luisfcolon/has/master/LICENSE)
 [![NPM downloads](https://img.shields.io/npm/dt/ohas.svg)](https://www.npmjs.com/package/ohas)
 [![GitHub issues](https://img.shields.io/github/issues/luisfcolon/has.svg)](https://github.com/luisfcolon/has/issues)
-https://img.shields.io/npm/dt/js-api-client.svg
+
 Determine if a javascript object has a key.
 Allows for nested key detection.
 
