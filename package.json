@@ -1,6 +1,6 @@
 {
   "name": "ohas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper method to see if an object has a specific key",
   "main": "dist",
   "scripts": {
