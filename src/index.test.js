@@ -1,7 +1,7 @@
 import has from './has';
 
 
-describe('Object utilities - has()', () => {
+describe('has() - Object key detection', () => {
   it('returns false if the base object is undefined.', () => {
     let obj;
 
