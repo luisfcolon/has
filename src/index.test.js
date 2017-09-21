@@ -1,4 +1,4 @@
-import has from './has';
+import has from './index';
 
 
 describe('has() - Object key detection', () => {
