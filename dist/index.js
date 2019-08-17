@@ -1,1 +1,34 @@
-"use strict";function has(e){if(void 0===e)return!1;for(var t=arguments.length,a=Array(t>1?t-1:0),n=1;n<t;n++)a[n-1]=arguments[n];for(var r=Array.prototype.slice.apply(a),s=r.length,i=e,u=0;u<s;u++){if(!i||!hasOwnProperty.call(i,r[u]))return!1;i=i[r[u]]}return!0}function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=has;var _index=require("./index"),_index2=_interopRequireDefault(_index);describe("has() - Object key detection",function(){it("returns false if the base object is undefined.",function(){expect((0,_index2.default)(void 0,"message")).toEqual(!1)}),it("returns true if an object has the key passed in.",function(){var e={message:"Remember the Alamo!"};expect((0,_index2.default)(e,"message")).toEqual(!0)}),it("returns false if an object does not have the key passed in.",function(){var e={message:"Remember the Alamo!"};expect((0,_index2.default)(e,"woops")).toEqual(!1)}),it("returns true if a nested object has the keys passed in.",function(){var e={user:{name:{first:"Luis"}}};expect((0,_index2.default)(e,"user","name","first")).toEqual(!0)}),it("returns false if a nested object does not have the keys passed in.",function(){var e={user:{name:{first:"Luis"}}};expect((0,_index2.default)(e,"user","name","last")).toEqual(!1)})});
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * has() returns a boolean
+ * based on if an object has a key
+ */
+function has(obj) {
+  if (obj === undefined) {
+    return false;
+  }
+
+  for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    args[_key - 1] = arguments[_key];
+  }
+
+  var keys = Array.prototype.slice.apply(args);
+  var length = keys.length;
+  var object = obj;
+
+  for (var i = 0; i < length; i++) {
+    if (!object || !hasOwnProperty.call(object, keys[i])) {
+      return false;
+    }
+
+    object = object[keys[i]];
+  }
+
+  return true;
+}
+
+exports.default = has;

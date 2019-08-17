@@ -4,7 +4,7 @@
   "description": "Helper method to see if an object has a specific key",
   "main": "dist",
   "scripts": {
-    "build": "./node_modules/.bin/babel --presets es2015 ./src/has.js -o ./dist/index.js",
+    "build": "./node_modules/.bin/babel --presets es2015 ./src/index.js -o ./dist/index.js",
     "test": "./node_modules/jest/bin/jest.js --coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
@@ -18,10 +18,6 @@
     "url": "https://github.com/luisfcolon/has/issues"
   },
   "homepage": "https://github.com/luisfcolon/has#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.2"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.0.2",
